@@ -2,6 +2,7 @@
 vendor
 
 .jekyll-cache
+_site
 
 node_modules
 
