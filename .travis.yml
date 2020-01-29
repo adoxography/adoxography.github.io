@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.7.0
 
-script: ./script/build
+script: ./script/cibuild
 
 branches:
   only:
