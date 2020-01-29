@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-set -e
-
-npm install
-bundle exec jekyll build
-touch ./_site/.nojekyll  # Jekyll has already been built; don't try to build it again
