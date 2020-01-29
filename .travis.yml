@@ -1,0 +1,24 @@
+language: ruby
+rvm:
+  - 2.7.0
+
+script: ./script/build
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+sudo: false
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  local_dir: _site/
+  github_token: $GITHUB_PAGES_API_KEY
+  on:
+    branch: master
