@@ -1,3 +1,6 @@
+name: Adoxography
+markdown: kramdown
+
 collections:
   authors:
     output: true
