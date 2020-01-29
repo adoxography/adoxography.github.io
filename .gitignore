@@ -1,0 +1,12 @@
+.bundle
+vendor
+
+.jekyll-cache
+
+node_modules
+
+# No zero-install config
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*

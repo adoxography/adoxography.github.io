@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css" />
+        {% feed_meta %}
+        {% seo %}
+    </head>
+    <body class="text-gray-900 bg-gray-100 bg-center bg-fixed pt-20">
+        {% include nav.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+    </body>
+</html>
