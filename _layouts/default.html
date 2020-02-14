@@ -7,11 +7,15 @@
         <link rel="stylesheet" href="/assets/css/styles.css" />
         {% feed_meta %}
         {% seo %}
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     </head>
-    <body class="text-gray-900 bg-gray-100 bg-center bg-fixed pt-20">
+    <body class="text-gray-900 font-body bg-gray-800 h-screen h-screen">
+        {% include background.html %}
         {% include nav.html %}
 
-        {{ content }}
+        <section class="flex justify-center">
+            {{ content }}
+        </section>
 
         {% include footer.html %}
     </body>

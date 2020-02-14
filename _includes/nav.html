@@ -1,23 +1,25 @@
-<nav class="border-t-2 border-gray-400 absolute top-0 w-full flex items-center justify-between flex-wrap bg-gray-600 text-white p-4 z-50 shadow-lg">
-    <!-- Logo -->
-    <div class="flex items-center flex-shrink-0">
-        <a href="/">
-            <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/>
-            </svg>
-        </a>
-        <a href="/" class="font-semibold text-xl tracking-tight">
-            <h1>Adoxography</h1>
-        </a>
-    </div>
+{%comment%}Single card menu for small screens{%endcomment%}
+<div class="relative h-24 m-auto w-64 lg:hidden">
+        <div class="font-display uppercase text-lg font-thin text-gray-100 text-center shadow-md bg-indigo-900 px-8 py-4 rounded-b-lg border-8 border-t-0 w-64 mx-auto absolute z-10 transform -translate-y-32 transition-transform duration-300 hover:translate-y-0">
+            <ul>
+                {% for item in site.data.nav %}
+                    <li>
+                        <a href="{{ item.link }}" class="">
+                            {{ item.name }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
 
-    <!-- Hamburger -->
-    <div class="block">
-        <button type="button" class="flex items-center px-3 py-2 border text-gray-200 border-gray-400 rounded hover:text-white hover:border-white focus:outline-none focus:shadow-outline">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-            </svg>
-        </button>
-    </div>
+            <a class="text-2xl block mt-4">Menu</a>
+        </div>
+</div>
+
+{%comment%}Multiple card menu for large screens{%endcomment%}
+<nav class="hidden lg:flex justify-around font-display uppercase text-2xl font-thin text-gray-100 text-center mb-8">
+    {% for item in site.data.nav %}
+        <a href="{{ item.link }}" class="block shadow-md bg-indigo-900 w-56 xl:w-64 px-8 py-4 rounded-b-lg border-8 border-t-0 border-gray-100 mb-4 hover:mb-0 hover:pt-8 transition-spacing duration-300">
+            {{ item.name }}
+        </a>
+    {% endfor %}
 </nav>

@@ -5,9 +5,3 @@ vendor
 _site
 
 node_modules
-
-# No zero-install config
-.yarn/*
-!.yarn/releases
-!.yarn/plugins
-.pnp.*
