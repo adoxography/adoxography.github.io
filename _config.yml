@@ -22,6 +22,7 @@ defaults:
       layout: "default"
 
 plugins:
+  - jekyll-assets
   - jekyll-feed
   - jekyll-postcss
   - jekyll-purgecss

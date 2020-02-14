@@ -1,24 +1,24 @@
 {%comment%}Single card menu for small screens{%endcomment%}
-<div class="relative h-24 m-auto w-64 lg:hidden">
-        <div class="font-display uppercase text-lg font-thin text-gray-100 text-center shadow-md bg-indigo-900 px-8 py-4 rounded-b-lg border-8 border-t-0 w-64 mx-auto absolute z-10 transform -translate-y-32 transition-transform duration-300 hover:translate-y-0">
-            <ul>
-                {% for item in site.data.nav %}
-                    <li>
-                        <a href="{{ item.link }}" class="">
-                            {{ item.name }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
+<div class="relative h-24 m-auto w-64 lg:hidden z-10">
+    <div class="font-display uppercase text-lg font-thin text-gray-100 text-center shadow-md bg-indigo-900 px-8 py-4 rounded-b-lg border-8 border-t-0 w-64 mx-auto absolute z-10 transform -translate-y-32 transition-transform duration-300 hover:translate-y-0">
+        <ul>
+            {% for item in site.data.nav %}
+                <li>
+                    <a href="{{ item.link }}" class="">
+                        {{ item.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
 
-            <a class="text-2xl block mt-4">Menu</a>
-        </div>
+        <a class="text-2xl block mt-4">Menu</a>
+    </div>
 </div>
 
 {%comment%}Multiple card menu for large screens{%endcomment%}
 <nav class="hidden lg:flex justify-around font-display uppercase text-2xl font-thin text-gray-100 text-center mb-8">
     {% for item in site.data.nav %}
-        <a href="{{ item.link }}" class="block shadow-md bg-indigo-900 w-56 xl:w-64 px-8 py-4 rounded-b-lg border-8 border-t-0 border-gray-100 mb-4 hover:mb-0 hover:pt-8 transition-spacing duration-300">
+        <a href="{{ item.link }}" class="block shadow-md bg-indigo-900 w-56 xl:w-64 px-8 py-4 rounded-b-lg border-8 border-t-0 border-gray-100 mb-4 hover:mb-0 hover:pt-8 transition-spacing duration-300 z-10">
             {{ item.name }}
         </a>
     {% endfor %}
