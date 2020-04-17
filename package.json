@@ -18,7 +18,7 @@
   "scripts": {
     "build:style": "postcss src/styles/index.css -o src/styles/tailwind.css",
     "build:react": "react-scripts build",
-    "build": "yarn build:style && yarn build:react",
+    "build": "cross-env NODE_ENV=production yarn build:style && yarn build:react",
     "start": "concurrently 'yarn build:style --watch' 'react-scripts start'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,6 +42,7 @@
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "autoprefixer": "^9.7.6",
     "concurrently": "^5.1.0",
+    "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0",
