@@ -9,7 +9,7 @@ const Heading = ({ children, className }) => (
 );
 
 const Paragraph = ({ children, className }) => (
-  <p className={`leading-relaxed mt-2 text-tint-80 ${className}`}>
+  <p className={`leading-relaxed mt-2 text-tint-80 md:text-lg ${className}`}>
     {children}
   </p>
 );
@@ -30,7 +30,7 @@ const About = () => (
   <>
     <TopNav />
 
-    <article className="mx-4 mt-6 mb-8">
+    <article className="mx-4 md:mx-16 lg:mx-32 mt-6 mb-8">
       <Heading>Who am I?</Heading>
       <Paragraph>
         My name is <strong>Graham Still</strong>, and I'm a <strong>developer</strong>, <strong>educator</strong>, and <strong>linguist</strong> based in Winnipeg, Manitoba, Canada.
@@ -46,7 +46,7 @@ const About = () => (
         I work as the Education Lead for the Winnipeg <Anchor href="https://canadalearningcode.ca/code-mobile">Code Mobile</Anchor>. I'm also in the final stages of a Masters degree in <strong>Computational Linguistics</strong> (also known as <strong>Natural Language Processing</strong>), supervised by Dr. Gina-Anne Levow.
       </Paragraph>
 
-      <h3 className="mt-6 text-lg">
+      <h3 className="mt-6 text-lg md:text-xl">
         <Link to="/contact">Send me a message</Link> if you'd like to get in touch!
       </h3>
     </article>
