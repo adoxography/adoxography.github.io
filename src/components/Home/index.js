@@ -27,13 +27,13 @@ const Home = () => (
     </div>
 
     <nav className="absolute w-full flex justify-around bottom-0 font-display lowercase text-2xl mb-1 md:mb-2">
-      <Link to="/about" className="block opacity-75 hover:text-shadow-glow hover:opacity-100 focus:outline-none focus:text-shadow-glow">
+      <Link to="/about" className="block opacity-75 hover:text-shadow-glow hover:opacity-100 focus:outline-none focus:text-shadow-glow transform-all duration-300">
         About
       </Link>
-      <Link to="/portfolio" className="block opacity-75 hover:text-shadow-glow hover:opacity-100 focus:outline-none focus:text-shadow-glow">
+      <Link to="/portfolio" className="block opacity-75 hover:text-shadow-glow hover:opacity-100 focus:outline-none focus:text-shadow-glow transform-all duration-300">
         Portfolio
       </Link>
-      <Link to="/contact" className="block opacity-75 hover:text-shadow-glow hover:opacity-100 focus:outline-none focus:text-shadow-glow">
+      <Link to="/contact" className="block opacity-75 hover:text-shadow-glow hover:opacity-100 focus:outline-none focus:text-shadow-glow transform-all duration-300">
         Contact
       </Link>
     </nav>
