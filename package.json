@@ -17,8 +17,9 @@
   },
   "scripts": {
     "build:style": "postcss src/styles/index.css -o src/styles/tailwind.css",
+    "build:react": "react-scripts build",
+    "build": "yarn build:style && yarn build:react",
     "start": "concurrently 'yarn build:style --watch' 'react-scripts start'",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
