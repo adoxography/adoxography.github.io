@@ -8,13 +8,13 @@ const Preview = ({ src, alt, href, className }) => (
 );
 
 const Paragraph = ({ children, className }) => (
-  <p className={`opacity-75 md:text-lg ${className}`}>
+  <p className={`text-tint-80 md:text-lg ${className}`}>
     {children}
   </p>
 );
 
 const Card = ({ children, className }) => (
-  <article className={`flex flex-col md:flex-row items-center md:items-start p-5 md:p-3 md:border-r-8 border-blue-300 ${className}`} style={{ backgroundColor: 'rgb(0, 0, 0, .9)' }}>
+  <article className={`flex flex-col md:flex-row items-center md:items-start p-5 md:p-3 bg-shade-90 md:border-r-8 border-blue-300 ${className}`}>
     {children}
   </article>
 );
@@ -38,7 +38,7 @@ const Portfolio = () => (
         </Paragraph>
       </Card>
 
-      <p className="mt-12 text-center opacity-75 text-lg md:text-xl">
+      <p className="mt-12 text-center text-tint-80 text-lg md:text-xl">
         I'm always working on new things! You can find more of my work on <a href="https://github.com/adoxography" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-shadow-glow focus:outline-none focus:text-shadow-glow transform-all duration-150">GitHub</a>.
       </p>
     </div>

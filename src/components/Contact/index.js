@@ -51,7 +51,7 @@ class Contact extends React.Component {
       <div className="h-full w-full">
         <TopNav />
 
-        <p className="mt-8 text-lg lg:text-xl px-8 md:px-16 lg:px-32 xl:px-48 opacity-75">
+        <p className="mt-8 text-lg lg:text-xl px-8 md:px-16 lg:px-32 xl:px-48 text-tint-80">
           Hi there! Thanks for your interest in my work. Drop me a message and I'll get back to you as soon as I'm able.
         </p>
 
@@ -95,7 +95,7 @@ class Contact extends React.Component {
           </div>
 
           <div className="w-full flex justify-center">
-            <button type="submit" className="mt-4 text-2xl uppercase font-thin opacity-75 hover:opacity-100 focus:opacity-100 focus:outline-none hover:text-shadow-glow focus:text-shadow-glow transition-all duration-300">
+            <button type="submit" className="mt-4 text-2xl uppercase font-thin text-tint-80 hover:text-white focus:outline-none hover:text-shadow-glow focus:text-shadow-glow transition-all duration-300">
               Send
             </button>
           </div>

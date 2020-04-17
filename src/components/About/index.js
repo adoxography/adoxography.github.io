@@ -9,7 +9,7 @@ const Heading = ({ children, className }) => (
 );
 
 const Paragraph = ({ children, className }) => (
-  <p className={`leading-relaxed mt-2 ${className}`}>
+  <p className={`leading-relaxed mt-2 text-tint-80 ${className}`}>
     {children}
   </p>
 );
