@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+html, body {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)),
+                url('../assets/background.jpg') #040506 fixed;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+@tailwind utilities;
