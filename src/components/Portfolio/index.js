@@ -2,7 +2,7 @@ import React from 'react';
 import TopNav from '../TopNav';
 
 const Preview = ({ src, alt, href, className }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className={`block flex-shrink-0 md:mr-4 mb-4 ${className}`}>
+  <a href={href} target="_blank" rel="noopener noreferrer" className={`block flex-shrink-0 md:mr-4 mb-4 md:mb-0 ${className}`}>
     <img src={src} alt={alt} className="w-24 md:w-32 h-24 md:h-32" />
   </a>
 );
