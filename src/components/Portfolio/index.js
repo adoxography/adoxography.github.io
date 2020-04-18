@@ -2,8 +2,8 @@ import React from 'react';
 import TopNav from '../TopNav';
 
 const Preview = ({ src, alt, href, className }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className={`block flex-shrink-0 md:mr-4 mb-4 md:mb-0 ${className}`}>
-    <img src={src} alt={alt} className="w-24 md:w-32 h-24 md:h-32" />
+  <a href={href} target="_blank" rel="noopener noreferrer" className={`block flex-shrink-0 md:mr-4 lg:mr-6 mb-4 md:mb-0 ${className}`}>
+    <img src={src} alt={alt} className="w-24 md:w-32 h-24 md:h-32 rounded-full" />
   </a>
 );
 
@@ -14,7 +14,7 @@ const Paragraph = ({ children, className }) => (
 );
 
 const Card = ({ children, className }) => (
-  <article className={`flex flex-col md:flex-row items-center md:items-start p-5 md:p-3 bg-shade-90 md:border-r-8 border-blue-300 ${className}`}>
+  <article className={`flex flex-col md:flex-row items-center md:items-start p-5 md:p-3 lg:p-6 bg-shade-80 shadow rounded ${className}`}>
     {children}
   </article>
 );
