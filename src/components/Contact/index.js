@@ -7,6 +7,7 @@ import Label from './Label';
 import Textarea from './Textarea';
 import Modal from './Modal';
 import TopNav from '../TopNav';
+import Anchor from '../Anchor';
 import { sendEmail } from './email';
 
 const handleFocus = e => {
@@ -51,7 +52,7 @@ class Contact extends React.Component {
       <div className="h-full w-full">
         <TopNav />
 
-        <p className="mt-8 text-lg lg:text-xl px-8 md:px-16 lg:px-32 xl:px-48 text-tint-80">
+        <p className="mt-8 text-lg lg:text-xl px-8 md:px-16 lg:px-32 xl:px-48 text-gray-200">
           Hi there! Thanks for your interest in my work. Drop me a message and I'll get back to you as soon as I'm able.
         </p>
 
@@ -95,7 +96,7 @@ class Contact extends React.Component {
           </div>
 
           <div className="w-full flex justify-center">
-            <button type="submit" className="mt-4 text-2xl uppercase font-thin text-tint-80 hover:text-white focus:outline-none hover:text-shadow-glow focus:text-shadow-glow transition-all duration-300">
+            <button type="submit" className="mt-4 px-2 py-1 rounded text-2xl uppercase font-thin text-gray-100 bg-gray-900 hover:bg-gray-700 hover:text-gray-050 transition-all duration-300">
               Send
             </button>
           </div>
@@ -107,8 +108,8 @@ class Contact extends React.Component {
             style={{ visibility: 'hidden' }}
           />
 
-          <p className="italic text-sm opacity-50 mt-12">
-            This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" className="text-blue-300 hover:text-shadow-glow transform-all duration-150">Privacy Policy</a> and <a href="https://policies.google.com/terms" className="text-blue-300 hover:text-shadow-glow transform-all duration-150">Terms of Service</a> apply.
+          <p className="italic text-sm text-gray-400 mt-12 mb-2">
+            This site is protected by reCAPTCHA and the Google <Anchor href="https://policies.google.com/privacy">Privacy Policy</Anchor> and <Anchor href="https://policies.google.com/terms">Terms of Service</Anchor> apply.
           </p>
         </form>
 

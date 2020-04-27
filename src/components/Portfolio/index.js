@@ -1,5 +1,6 @@
 import React from 'react';
 import TopNav from '../TopNav';
+import Anchor from '../Anchor';
 
 const Preview = ({ src, alt, href, className }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" className={`block flex-shrink-0 md:mr-4 lg:mr-6 mb-4 md:mb-0 ${className}`}>
@@ -8,7 +9,7 @@ const Preview = ({ src, alt, href, className }) => (
 );
 
 const Paragraph = ({ children, className }) => (
-  <p className={`text-tint-80 md:text-lg ${className}`}>
+  <p className={`text-gray-100 md:text-lg ${className}`}>
     {children}
   </p>
 );
@@ -27,19 +28,19 @@ const Portfolio = () => (
       <Card>
         <Preview href="http://alglang.net" src="alglang-logo.png" alt="Alglang logo" />
         <Paragraph>
-          The Database of Algonquian Language Structures (<a href="https://alglang.net" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-shadow-glow focus:outline-none focus:text-shadow-glow transform-all duration-150">alglang.net</a>) is a project to provide basic information about the sounds and grammar of the Algonquian languages in an easily searchable format.
+          The <strong>Database of Algonquian Language Structures</strong> (<Anchor href="http://alglang.net">alglang.net</Anchor>) is a project to provide basic information about the sounds and grammar of the Algonquian languages in an easily searchable format.
         </Paragraph>
       </Card>
 
       <Card className="mt-12">
         <Preview href="https://github.com/adoxography/countdown" src="countdown-logo.png" alt="Countdown logo" />
         <Paragraph>
-          I often find myself needing a timer for the work sessions within in-person workshops I teach. All of the MacOS timers I've found so far either won't work on top of a full-screen app, or are glued to the top bar. <a href="https://github.com/adoxography/countdown" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-shadow-glow focus:outline-none focus:text-shadow-glow transform-all duration-150">Countdown</a> overcomes both of these limitations.
+          I often find myself needing a timer for the work sessions within in-person workshops I teach. All of the MacOS timers I've found so far either won't work on top of a full-screen app, or are glued to the top bar. <Anchor href="https://github.com/adoxography/countdown">Countdown</Anchor> overcomes both of these limitations.
         </Paragraph>
       </Card>
 
       <p className="mt-12 text-center text-tint-80 text-lg md:text-xl">
-        I'm always working on new things! You can find more of my work on <a href="https://github.com/adoxography" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-shadow-glow focus:outline-none focus:text-shadow-glow transform-all duration-150">GitHub</a>.
+        I'm always working on new things! You can find more of my work on <Anchor href="https://github.com/adoxography">GitHub</Anchor>.
       </p>
     </div>
   </>

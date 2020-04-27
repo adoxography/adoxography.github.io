@@ -4,7 +4,7 @@ import { Spade } from './svg';
 
 const TopNav = () => (
   <nav className="flex-row shadow pl-3 py-2 bg-shade-80">
-    <Link to="/" className="flex items-center text-tint-80 hover:text-white hover:text-shadow-glow focus:text-shadow-glow focus:outline-none">
+    <Link to="/" className="flex items-center text-cyan-050 hover:text-cyan-200 hover:text-shadow-glow focus:text-shadow-glow focus:outline-none">
       <Spade className="block h-4" />
       <h1 className="ml-1 text-lg lowercase font-thin">
         Adoxography

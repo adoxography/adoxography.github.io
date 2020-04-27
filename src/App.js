@@ -29,10 +29,12 @@ const BackgroundContainer = posed.div({
   enter: {
     opacity: 1,
     delay: 500,
+    zIndex: -10,
     transition: { duration: 2000 }
   },
   exit: {
-    opacity: 0
+    opacity: 0,
+    zIndex: -10,
   }
 });
 
@@ -59,8 +61,8 @@ const App = () => {
       <div className="App h-screen w-screen text-gray-100 font-body">
         <RouteContainer>
           <PoseGroup animateOnMount>
-            <BackgroundContainer key="modal">
-              <img src={backgroundImage} loading="lazy" className="absolute top-0 -z-10 h-screen w-screen object-cover opacity-25" alt="" />
+            <BackgroundContainer key="modal" className="fixed -z-50 top-0">
+              <img src={backgroundImage} loading="lazy" className="h-screen w-screen object-cover opacity-25" alt="" />
             </BackgroundContainer>
           </PoseGroup>
         </RouteContainer>
