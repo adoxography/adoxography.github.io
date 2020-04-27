@@ -10,6 +10,10 @@ html, body {
     box-sizing: border-box;
 }
 
+body {
+    background-color: hsl(209, 61%, 3%);
+}
+
 * {
     box-sizing: inherit;
 }
