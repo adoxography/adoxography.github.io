@@ -11,6 +11,8 @@ import About from './components/About/index';
 import Contact from './components/Contact/index';
 import Portfolio from './components/Portfolio/index';
 
+import bg from './assets/background.jpg';
+
 const RouteContainer = posed.div({
   enter: {
     opacity: 1,
@@ -44,6 +46,7 @@ const App = () => {
   return (
     <Router>
       <div className="App h-screen w-screen text-gray-100 font-body">
+        <img src={bg} loading="lazy" className="absolute top-0 -z-10 h-screen w-screen object-cover opacity-25" alt="" />
         <div className="h-full w-full">
           <Content />
         </div>
