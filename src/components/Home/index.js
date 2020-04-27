@@ -19,7 +19,7 @@ const scrollWords = [
 const Home = () => (
   <div className="flex justify-center items-center h-full text-tint-80">
     <div className="flex flex-col">
-      <Spade className="h-48 md:h-64" />
+      <Spade className="h-48 md:h-64 lg:h-76" />
       <h1 className="text-4xl md:text-5xl font-display uppercase font-thin tracking-wider">
         Adoxography
       </h1>
