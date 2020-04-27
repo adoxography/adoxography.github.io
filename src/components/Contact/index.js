@@ -107,7 +107,7 @@ class Contact extends React.Component {
             style={{ visibility: 'hidden' }}
           />
 
-          <p class="italic text-sm opacity-50 mt-12">
+          <p className="italic text-sm opacity-50 mt-12">
             This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" className="text-blue-300 hover:text-shadow-glow transform-all duration-150">Privacy Policy</a> and <a href="https://policies.google.com/terms" className="text-blue-300 hover:text-shadow-glow transform-all duration-150">Terms of Service</a> apply.
           </p>
         </form>
