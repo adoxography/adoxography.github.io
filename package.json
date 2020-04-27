@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "emailjs-com": "^2.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -20,7 +17,6 @@
     "build:react": "react-scripts build",
     "build": "cross-env NODE_ENV=production yarn build:style && yarn build:react",
     "start": "concurrently 'yarn build:style --watch' 'react-scripts start'",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
