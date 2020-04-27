@@ -10,6 +10,7 @@ import Home from './components/Home/index';
 import About from './components/About/index';
 import Contact from './components/Contact/index';
 import Portfolio from './components/Portfolio/index';
+import Background from './components/Background';
 
 import backgroundImage from './assets/background.jpg';
 
@@ -22,19 +23,6 @@ const RouteContainer = posed.div({
   exit: {
     opacity: 0,
     height: '100%'
-  }
-});
-
-const BackgroundContainer = posed.div({
-  enter: {
-    opacity: 1,
-    delay: 500,
-    zIndex: -10,
-    transition: { duration: 2000 }
-  },
-  exit: {
-    opacity: 0,
-    zIndex: -10,
   }
 });
 
@@ -55,23 +43,15 @@ const Content = () => {
   );
 };
 
-const App = () => {
-  return (
-    <Router>
-      <div className="App h-screen w-screen text-gray-100 font-body">
-        <RouteContainer>
-          <PoseGroup animateOnMount>
-            <BackgroundContainer key="modal" className="fixed -z-50 top-0">
-              <img src={backgroundImage} loading="lazy" className="h-screen w-screen object-cover opacity-25" alt="" />
-            </BackgroundContainer>
-          </PoseGroup>
-        </RouteContainer>
-        <div className="h-full w-full">
-          <Content />
-        </div>
+const App = () => (
+  <Router>
+    <div className="App h-screen w-screen text-gray-100 font-body">
+      <Background src={backgroundImage} />
+      <div className="h-full w-full">
+        <Content />
       </div>
-    </Router>
-  );
-};
+    </div>
+  </Router>
+);
 
 export default App;
